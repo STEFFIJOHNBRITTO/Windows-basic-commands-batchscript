@@ -34,8 +34,9 @@ Create a directory named "MyLab" on the desktop.
 ## COMMAND
 
 Change to the "MyLab" directory and create an empty text file named "MyFile.txt" inside it.
-
+```
 mkdir %userprofile%\Desktop\MyLab
+```
 
  ## OUTPUT
  
@@ -44,8 +45,9 @@ mkdir %userprofile%\Desktop\MyLab
 ## COMMAND
 
 List the contents of the "MyLab" directory.
-
+```
 cd %userprofile%\Desktop\MyLab
+```
 
 ## OUTPUT
 
@@ -56,8 +58,9 @@ cd %userprofile%\Desktop\MyLab
 ## COMMAND
 
 Copy "MyFile.txt" to a new folder named "Backup" on the desktop.
-
+```
 dir %userprofile%\Desktop\MyLab
+```
 
 ## OUTPUT
 ![image](https://github.com/Jeevithaelumalai/Windows-basic-commands-batchscript/assets/118708245/40de307a-60ec-44ed-a9d2-94ed73c8d346)
@@ -65,10 +68,10 @@ dir %userprofile%\Desktop\MyLab
 ## COMMAND 
 
 Move the "MyLab" directory to the "Documents" folder.
-
+```
 mkdir %userprofile%\Desktop\Backup
-
 mkdir %userprofile%\Desktop\Backup
+```
 
 ## OUTPUT
 
@@ -77,8 +80,9 @@ mkdir %userprofile%\Desktop\Backup
 
 
 ## COMMAND 
-
+```
 mv Myfile.txt %userprofile%\Documents
+```
 
 ## OUTPUT
 
@@ -88,11 +92,12 @@ mv Myfile.txt %userprofile%\Documents
 Create a batch script named "BackupScript.bat" that creates a backup of files with the ".docx" extension from the "Documents" folder to a new folder named "DocBackup" on the desktop.
 
 
+```
 @echo off
 mkdir %userprofile%\Desktop\DocBackup
 copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
 echo Backup completed successfully!
-
+```
 
 
 
